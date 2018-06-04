@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+    font-family: Avenir-Book;
+    src: url('https://privateevents.peacecenter.org/articlemedia/fonts/Avenir-Book.ttf');
+}
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url('https://privateevents.peacecenter.org/articlemedia/fonts/Gotham-Book.otf');
+}
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: url('https://privateevents.peacecenter.org/articlemedia/fonts/Gotham-Medium.otf');
+}
+
+@font-face {
+    font-family: Johnston;
+    src: url('../P22JohnstonUnderground.ttf');
+}
+
+/* CSS Document */
+
+body, html {
+	font-size: 16px;
+	font-family: "Avenir-Book", "Avenir", Helvetica, Arial, sans-serif;
+	color: #4c4c4c;
+	background-color: #ffffff;
+}
+
+header,footer {
+	height: 150px;
+	width: 100vw;
+	background-color: #3f4c56;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Johnston", "Gotham-Book", "Gotham", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+	color: #004f73;
+	margin: 10px 0 0;
+}
+
+h2 {
+	font-size: 1.5rem;
+	color: #004f73;
+	margin: 2rem 0 5px;
+}
+
+h2:first-of-type {
+	margin: 0;
+}
+
+h2.specialGuest {
+	font-size: 1.5rem;
+	font-family: "Johnston", "Avenir", Helvetica, Arial, sans-serif;
+	color: #004f73;
+	margin: 0 0 10px;
+}
+
+h4 {
+	color: #4b769a;
+	font-size: 1.5rem;
+	margin: 25px 0 5px;
+}
+
+h4:first-of-type {
+	margin: 0 0 5px;
+}
+
+h6 {
+	font-size: 1.1rem;
+	font-family: 'Avenir', helvetica, arial, sans-serif;
+}
+
+p {
+	line-height: 1.6;
+}
+
+em, .publication {
+	font-style: italic;
+}
+
+b {
+	font-weight: bold;
+}
+
+a, a:hover {
+	color: #4b768a;
+	text-decoration: none;
+}
+
+.date {
+	font-family: "Johnston", "Avenir", Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	display: block;
+	margin: 15px 0;
+	font-size: 1.3rem;
+}
+
+.heroHolder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0;
+	background-size: cover;
+}
+
+.heroHolder:before {
+	content: '';
+	display: block;
+	height: 600px;
+	width: 100%;
+	position: absolute;
+	background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
+}
+.heroHolder:after {
+	content: '';
+	display: block;
+	height: 600px;
+	width: 100%;
+	position: absolute;
+	background: rgba(255,255,255,0.5);
+}
+
+.contentHolder {
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	margin: 50px 0;
+	padding: 50px 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.left {
+	width: 650px;
+}
+
+.right {
+	width: 300px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.info {
+	background: #ecedee;
+	padding: 20px 20px;
+	width: 100%;
+	margin: 0 0 2px;
+}
+
+.info.toggle.collapsed .first:after {
+	content: '+';
+	display: inline-block;
+	margin: 0 0 0 5px;
+}
+
+.info.toggle .first:after {
+	content: '-';
+	display: inline-block;
+	margin: 0 0 0 5px;
+}
+
+.info.button {
+	background: #76b758;
+	text-align: center;
+	color: #ffffff;
+}
+
+.infoholder {
+	color: #4c4c4c;
+	padding: 10px 0 0 10px;
+	line-height: 1.2;
+}
+
+h2 .toggle.collapsed:after {
+	content: '+';
+	display: inline-block;
+	margin: 0 0 0 5px;
+}
+
+h2 .toggle:after {
+	content: '-';
+	display: inline-block;
+	margin: 0 0 0 5px;
+}
+
+h2 a {
+	color: #004f73;
+}
+
+.showpagevideo {
+	width: 100%;
+	height: 366px;
+}
+
+.moreHolder {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.moreCard {
+	width: 310px;
+	background: #ecedee;
+	padding: 0 0 20px;
+	margin: 0 0 20px;
+}
+
+.moreCard img {
+	width: 100%;
+	margin: 0 0 20px;
+}
+
+.moreCard p, .moreCard h3 {
+	width: calc(100% - 40px);
+	margin: 0 auto;
+}
+
+.eventListing {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 1.5rem 0 50px;
+}
+
+.eventInfo h3 {
+	font-size: 1.5rem;
+}
+
+.eventButton {
+	padding: 20px 50px;
+	background: #4c4c4c;
+	color: #ffffff;
+}
+
+.buy {
+	color: #ffffff;
+}
+
+.buy:hover {
+	background: #4b768a;
+	color: #ffffff;
+}
+
+img.sponsor {
+	width: 75%;
+	margin: 25px auto;
+}
+
+
+@media screen and ( min-width:768px ) {
+	.maxw {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	}
+
+@media screen and ( min-width:1200px ) {
+	.maxw {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	
+	.hero {
+		max-width: 1000px;
+		position: relative;
+		z-index: 15;
+	}
+
+}
