@@ -201,7 +201,18 @@ a, a:hover {
 	background: #ecedee;
 	padding: 20px 20px;
 	width: 100%;
-	margin: 0 0 2px;
+	border: 1px solid #cccccc;
+	border-top: 0px;
+	transition-duration: 0.3s;
+}
+
+.info:hover {
+	background: #f5f5f5;
+	transition-duration: 0.3s;
+}
+
+.info.toggle {
+	color: #4c4c4c;
 }
 
 .info.toggle.collapsed .first:after {
@@ -220,6 +231,14 @@ a, a:hover {
 	background: #76b758;
 	text-align: center;
 	color: #ffffff;
+	border: 1px solid #76b758;
+	transition-duration: 0.3s;
+}
+
+.info.button:hover {
+	background: #4b768a;
+	border: 1px solid #4b768a;
+	transition-duration: 0.3s;
 }
 
 .infoholder {
@@ -272,6 +291,10 @@ h2 a {
 	margin: 0 auto;
 }
 
+.moreCard h3 {
+	font-size: 1.2rem;
+}
+
 .eventListing {
 	display: flex;
 	flex-flow: row wrap;
@@ -283,14 +306,14 @@ h2 a {
 	font-size: 1.5rem;
 }
 
-.eventButton {
-	padding: 20px 50px;
+.buy {
+	padding: 0 50px;
 	background: #4c4c4c;
 	color: #ffffff;
-}
-
-.buy {
-	color: #ffffff;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .buy:hover {
